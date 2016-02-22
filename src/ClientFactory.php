@@ -5,7 +5,7 @@ namespace Silktide\SemRushApi;
 use Guzzle\Http\Client as Guzzle;
 use Silktide\SemRushApi\Cache\MemoryCache;
 use Silktide\SemRushApi\Helper\ResponseParser;
-use Silktide\SemRushApi\Helper\UrlBuilder;
+use Silktide\SemRushAp\Helper\UrlBuilder;
 use Silktide\SemRushApi\Model\Factory\RequestFactory;
 use Silktide\SemRushApi\Model\Factory\ResultFactory;
 use Silktide\SemRushApi\Model\Factory\RowFactory;

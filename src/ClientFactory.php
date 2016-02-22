@@ -2,7 +2,7 @@
 
 namespace Silktide\SemRushApi;
 
-use GuzzleHttp\Client as Guzzle;
+use Guzzle\Http\Client as Guzzle;
 use Silktide\SemRushApi\Cache\MemoryCache;
 use Silktide\SemRushApi\Helper\ResponseParser;
 use Silktide\SemRushApi\Helper\UrlBuilder;

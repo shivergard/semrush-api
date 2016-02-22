@@ -5,7 +5,7 @@ namespace Silktide\SemRushApi;
 use GuzzleHttp\Client as Guzzle;
 use Silktide\SemRushApi\Cache\MemoryCache;
 use Silktide\SemRushApi\Helper\ResponseParser;
-use Silktide\SemRushAp\Helper\UrlBuilder;
+use Silktide\SemRushApi\Helper\UrlBuilder;
 use Silktide\SemRushApi\Model\Factory\RequestFactory;
 use Silktide\SemRushApi\Model\Factory\ResultFactory;
 use Silktide\SemRushApi\Model\Factory\RowFactory;
@@ -28,7 +28,7 @@ abstract class ClientFactory
         $rowFactory = new RowFactory();
         $resultFactory = new ResultFactory($rowFactory);
         $responseParser = new ResponseParser();
-        $urlBuilder = new \Silktide\SemRushAp\Helper\UrlBuilder();
+        $urlBuilder = new UrlBuilder();
         $guzzle = new Guzzle();
 
         $client = new Client($apiKey, $requestFactory, $resultFactory, $responseParser, $urlBuilder, $guzzle);

@@ -28,7 +28,7 @@ abstract class ClientFactory
         $rowFactory = new RowFactory();
         $resultFactory = new ResultFactory($rowFactory);
         $responseParser = new ResponseParser();
-        $urlBuilder = new Silktide\SemRushAp\Helper\UrlBuilder();
+        $urlBuilder = new \Silktide\SemRushAp\Helper\UrlBuilder();
         $guzzle = new Guzzle();
 
         $client = new Client($apiKey, $requestFactory, $resultFactory, $responseParser, $urlBuilder, $guzzle);
